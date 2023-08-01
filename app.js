@@ -5,13 +5,15 @@ const express = require('express');
 
 
 // Replace 'YOUR_VIBER_BOT_TOKEN' with your actual Viber bot token
-const botToken = '513924ee9b67e58b-5dd90bd61293e8da-b476d2526bc0e0e9';
+const botToken = '516ca24ed6e7e310-335bb7cf88a509ee-e8bb9cfd892c1fae';
 
 const bot = new ViberBot({
     authToken: botToken,
     name: 'MyViberBot',
     avatar: 'URL_К_ВАШЕЙ_АВАТАРКЕ_БОТА',
   });
+
+  console.log(bot);
   
   // Обработчик события нового сообщения
   bot.on(BotEvents.MESSAGE_RECEIVED, (message, response) => {
@@ -32,7 +34,7 @@ const bot = new ViberBot({
     console.log(`Бот слушает порт ${port}`);
     
     // Устанавливаем вебхуки после того, как сервер запущен и прослушивает порт
-    bot.setWebhook('https://webhook.site/db1e4d01-55c1-4021-93ef-e6fcb7f97ba9').catch((error) => {
+    bot.setWebhook('https://webhook.site/9318cee9-1f68-4307-bb27-dde9e6797997').catch((error) => {
       console.error('Ошибка установки вебхука:', error);
     });
   });
