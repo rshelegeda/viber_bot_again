@@ -59,6 +59,7 @@ const bot = new ViberBot({
 
 // Perfect! Now here's the key part:
 bot.on(BotEvents.MESSAGE_RECEIVED, (message, response) => {
+    console.log('Message');
     // Echo's back the message to the client. Your bot logic should sit here.
     response.send(message);
 });
