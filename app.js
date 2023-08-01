@@ -35,3 +35,5 @@ const bot = new ViberBot({
       console.error('Ошибка установки вебхука:', error);
     });
   });
+
+  //
