@@ -31,7 +31,7 @@ const bot = new ViberBot({
     console.log(`Бот слушает порт ${port}`);
   
     // Устанавливаем вебхук после того, как сервер запущен и прослушивает порт
-    bot.setWebhook(`https://webhook.site/db1e4d01-55c1-4021-93ef-e6fcb7f97ba9/`).catch((error) => {
+    bot.setWebhook(`https://webhook.site/db1e4d01-55c1-4021-93ef-e6fcb7f97ba9`).catch((error) => {
       console.error('Ошибка установки вебхука:', error);
     });
   });
