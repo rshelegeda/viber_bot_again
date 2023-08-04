@@ -41,7 +41,7 @@ app.listen(port, () => {
     console.log(`Бот слушает порт ${port}`);
 
     // Устанавливаем вебхуки после того, как сервер запущен и прослушивает порт
-    const webhookUrl = 'https://dd52-212-55-67-88.ngrok-free.app/';
+    const webhookUrl = 'http://91.206.179.119:8080';
     bot.setWebhook(webhookUrl).catch((error) => {
         console.error('Ошибка установки вебхука:', error);
     });
